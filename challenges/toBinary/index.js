@@ -1,9 +1,6 @@
 //convert button
 let convertButton = document.getElementById("convertButton");
-convertButton.addEventListener("click",convertToBinary);
-
-//convert function
-function convertToBinary() {
+convertButton.addEventListener("click",() => {
     let decimalNumberText = document.getElementById("numberToBinary").value;
     let decimalNumberInt = parseInt(decimalNumberText);
     let arrayResult = [];
@@ -27,13 +24,13 @@ function convertToBinary() {
         document.getElementById("resultOutput").value = stringResult;
     }
 }
+);
 
 //reset button
 let resetButton =  document.getElementById("resetButton");
-resetButton.addEventListener("click", resetText);
-
 //clean input and text area
-function resetText() {
+resetButton.addEventListener("click", () => {
     document.getElementById("resultOutput").value = "";
     document.getElementById("numberToBinary").value = "";
 }
+);
