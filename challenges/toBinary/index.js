@@ -34,3 +34,6 @@ resetButton.addEventListener("click", () => {
     document.getElementById("numberToBinary").value = "";
 }
 );
+
+
+

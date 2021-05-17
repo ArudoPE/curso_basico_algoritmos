@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ViajaSeguro by ArudoPE</title>
+</head>
+<body>
+    <main class="main">
+        <div class="spacer"></div>
+        <section class="form-container--section">
+            <form action="" class="main-form">
+                <div class="transport-selection--part">
+                    <label for="">¿Viajarás en avión o en bus?</label><br>
+                    <div class="radio-selection">
+                            <span class="airplane-image"></span><input type="radio" name="transport-selection" id="airplaneSelection">
+                            <span class="bus-image"></span><input type="radio" name="transport-selection" id="busSelection">
+                    </div>
+                </div>
+                <div class="origin-city--part">
+                    <label for="">Ciudad de origen</label><br>
+                    <select name="origin-city" id="originCity" required>
+                        <option value="">--Por favor elegir una opción--</option>
+                        <option value="Chiclayo">Chiclayo</option>
+                        <option value="Chimbote">Chimbote</option>
+                        <option value="Lima">Lima</option>
+                        <option value="Paita">Paita</option>
+                        <option value="Piura">Piura</option>
+                        <option value="Trujillo">Trujillo</option>
+                    </select>
+                </div>
+                <div class="destination-city--part">
+                    <label for="">Ciudad de destino</label><br>
+                    <select name="destination-city" id="destinationCity" required>
+                        <option value="">--Por favor elegir una opción--</option>
+                        <option value="Chiclayo">Chiclayo</option>
+                        <option value="Chimbote">Chimbote</option>
+                        <option value="Lima">Lima</option>
+                        <option value="Paita">Paita</option>
+                        <option value="Piura">Piura</option>
+                        <option value="Trujillo">Trujillo</option>
+                    </select>
+                </div>
+                <div class="travel-date--part">
+                    <label for="">Elegir fecha</label><br>
+                    <input type="date" name="travel-date" id="travelDate" required>
+                </div>
+                <div class="travel-hour--part">
+                    <label for="">Elegir hora de viaje:</label><br>
+                    <select name="travel-hour" id="travelHour" required>
+                        <option value="">--Por favor elegir una opción--</option>
+                        <option value="08:00am">08am</option>
+                        <option value="10:00am">10am</option>
+                        <option value="02:00pm">02pm</option>
+                        <option value="04:00pm">04pm</option>
+                        <option value="06:00pm">06pm</option>
+                        <option value="08:00pm">08pm</option>
+                    </select>
+                </div>
+                <div class="button--part">
+                    <button type="button" id="formButton">Seleccionar</button>
+                </div>
+            </form>
+        </section>
+        <section class="bought-tickets--section" id="boughtTicketsSection">
+            <div class="selected-ticket--container">
+                <h2>Mi ticket seleccionado:</h2>
+                <div class="selected-ticket">
+                    <p class="ticket-title">-Tipo de transporte seleccionado:</p>
+                    <p class="ticket-value" id="transportSelectionTicket"></p>
+                    <p class="ticket-title">-Ciudad de Origen:</p>
+                    <p class="ticket-value" id="cityOriginTicket"></p>
+                    <p class="ticket-title">-Ciudad de Destino:</p>
+                    <p class="ticket-value" id="cityDestinationTicket"></p>
+                    <p class="ticket-title">-Fecha seleccionada:</p>
+                    <p class="ticket-value" id="travelDateTicket"></p>
+                    <p class="ticket-title">-Hora de viaje:</p>
+                    <p class="ticket-value" id="travelHourTicket"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
